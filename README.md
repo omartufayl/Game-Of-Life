@@ -12,3 +12,5 @@ following rules:
     When an empty position:
         - has exactly three neighbouring cells, a cell is created in its position
             - otherwise, it remains empty
+
+![](https://github.com/omartufayl/Game-Of-Life/blob/master/screenclip.gif =250x)
