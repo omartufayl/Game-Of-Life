@@ -76,7 +76,7 @@ class GameOfLife():
         self.grid = []
         board_size = 520
         self.root = root
-        self.root.title("BBC - Game of Life by Omar Tufayl")
+        self.root.title("Game of Life by Omar Tufayl")
         self.frame = Frame(root, width=board_size, height=board_size)
         self.frame.pack()
         self.canvas = Canvas(self.frame, width=board_size, height=board_size)
