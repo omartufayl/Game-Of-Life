@@ -14,13 +14,12 @@ the following rules:
     - has exactly three neighbouring cells, a cell is created in its position
         - otherwise, it remains empty
 """
-from __future__ import print_function
 try:
     # for Python2, uppercase T in Tkinter
-    from Tkinter import Tk, Frame, Canvas
+    from Tkinter import *
 except ImportError:
     # for Python3, lowercase 't' in tkinter
-    from tkinter import Tk, Frame, Canvas
+    from tkinter import *
 import random
 
 
@@ -175,7 +174,7 @@ class GameOfLife():
     def stop_game(self):
         try:
             self.root.after_cancel(self.game_id)
-        except (NameError, AttributeError):
+        except (NameError, AttributeError, ValueError):
             pass
 
     def reset_game(self):
