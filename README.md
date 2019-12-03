@@ -14,3 +14,9 @@ following rules:
             - otherwise, it remains empty
 
 Screenshot: https://github.com/omartufayl/Game-Of-Life/blob/master/screenshot.png
+
+---
+
+Dependencies: Tkinter
+
+Run: main.py
