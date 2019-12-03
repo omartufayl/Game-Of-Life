@@ -30,18 +30,18 @@ class Cell:
         determines cell fate according to particular rules
 
         Arguments:
-            parent (): ...
-            x (): ...
-            y (): ...
-            row (): ...
-            col (): ...
+            parent (GameOfLife): a Cell is bound to a GameOfLife instance
+            x (int): the x-coordinate for the top left point of the cell
+            y (int): the y-coordinate for the top left point of the cell
+            row (int): the row number in the grid
+            col (int): the column number in the grid
 
         Attributes:
-            parent (): ...
-            rect_id (): ...
-            row (): ...
-            col (): ...
-            alive (): ...
+            parent (GameOfLife): Cells are bound to a common GameOfLife parent
+            rect_id (int): the tkinter reference id for this cell
+            row (int): the row number in the grid
+            col (int): the column number in the grid
+            alive (bool): a True value for alive, False otherwise
     """
 
     def __init__(self, parent, x, y, row, col):
@@ -103,12 +103,12 @@ class GameOfLife():
             root (Tk): bind Tkinter root to GameOfLife()
 
         Attributes:
-            game_id (int):
-            grid (list):
-            board_size (int):
-            root (Tk):
-            frame (Frame):
-            canvas (Canvas):
+            game_id (int): each game has a uniquie id
+            grid (list): a row, column data structure to store cells
+            board_size (int): default dimensions for display board
+            root (Tk): the Tkinter GUI object
+            frame (Frame): allows placement of sub elements
+            canvas (Canvas): allows graphics abilities
     """
 
     def __init__(self, tkinter_root):
